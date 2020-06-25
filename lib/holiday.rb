@@ -47,7 +47,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.collect do |season, holiday|
     holiday.collect do |supply|
       if supply == "BBQ"
-        puts holiday
+        holiday
       end
     end.flatten
   end

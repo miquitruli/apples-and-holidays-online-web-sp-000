@@ -39,8 +39,10 @@ end
 def all_winter_holiday_supplies(holiday_hash)
 
   holiday_hash.each do |season,holiday|
-    holiday.each do |supplies|
-      puts "#{supplies}"
+    if holiday == :winter
+      holiday.each do |supplies|
+        puts "#{supplies}"
+      end
     end
   end
 end
